@@ -4,4 +4,4 @@ EXPOSE 8080
 RUN useradd -m user
 USER user
 RUN echo "cd ~/" >> ~/.bashrc
-CMD /gotty -w --timeout 10 /bin/bash
+CMD /gotty -w /bin/bash
